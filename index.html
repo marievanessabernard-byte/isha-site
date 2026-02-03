@@ -3,26 +3,23 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>ISHA - Cercle des Femmes de Grande Destinée</title>
 
 <style>
 body{
     margin:0;
     font-family:"Georgia",serif;
-    background:
-      radial-gradient(circle at top,#2b1c0e,#000 60%);
-    color:#eee;
+    background:radial-gradient(circle at top,#1c0d0b,#000 70%);
+    color:#f5e8e4;
 }
 
 /* HEADER */
 header{
-    background:
-    linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.9)),
-    url("https://i.imgur.com/7z9XQ9U.jpg");
-    background-size:cover;
+    background:linear-gradient(rgba(0,0,0,.85),rgba(0,0,0,.95));
     text-align:center;
     padding:90px 20px;
-    border-bottom:2px solid #d4af37;
+    border-bottom:2px solid #b97a6b;
 }
 
 header img{
@@ -31,212 +28,4 @@ header img{
 }
 
 header h1{
-    font-size:55px;
-    color:#d4af37;
-    letter-spacing:4px;
-    margin:10px 0;
-}
-
-header p{
-    color:#e6c873;
-    font-size:20px;
-}
-
-/* MENU */
-nav{
-    background:#000;
-    border-bottom:1px solid #d4af37;
-    padding:14px;
-    text-align:center;
-}
-
-nav a{
-    color:#d4af37;
-    margin:0 20px;
-    text-decoration:none;
-    font-weight:bold;
-    font-size:15px;
-}
-
-nav a:hover{
-    color:#fff;
-}
-
-/* SECTIONS */
-section{
-    max-width:1200px;
-    margin:auto;
-    padding:70px 20px;
-}
-
-h2{
-    text-align:center;
-    color:#d4af37;
-    font-size:34px;
-    margin-bottom:45px;
-    text-shadow:0 0 10px gold;
-}
-
-/* BOX */
-.box{
-    background:
-    linear-gradient(145deg,#1a1208,#000);
-    border:1px solid #d4af37;
-    border-radius:15px;
-    padding:40px;
-    box-shadow:
-      0 0 25px rgba(212,175,55,.4);
-}
-
-/* ABOUT */
-.about{
-    display:grid;
-    grid-template-columns:1.2fr 1fr;
-    gap:35px;
-    align-items:center;
-}
-
-.about img{
-    width:100%;
-    border-radius:12px;
-    border:2px solid #d4af37;
-    box-shadow:0 0 20px gold;
-}
-
-/* FORM */
-form input,textarea{
-    background:#000;
-    border:1px solid #d4af37;
-    color:#fff;
-    border-radius:8px;
-    padding:12px;
-    margin:10px 0;
-    width:100%;
-}
-
-form button{
-    background:linear-gradient(#ffd86a,#d4af37);
-    color:#000;
-    font-weight:bold;
-    padding:14px 40px;
-    border:none;
-    border-radius:30px;
-    cursor:pointer;
-    box-shadow:0 0 15px gold;
-}
-
-/* DEPARTMENTS */
-.grid{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(190px,1fr));
-    gap:20px;
-}
-
-.card{
-    background:#000;
-    border:1px solid #d4af37;
-    padding:16px;
-    border-radius:10px;
-    text-align:center;
-    color:#d4af37;
-    box-shadow:0 0 12px rgba(212,175,55,.4);
-    font-weight:bold;
-}
-
-/* CONTACT */
-.contact p{
-    font-size:17px;
-    margin:10px 0;
-}
-
-/* FOOTER */
-footer{
-    background:#000;
-    border-top:1px solid #d4af37;
-    text-align:center;
-    padding:25px;
-    color:#d4af37;
-}
-
-/* MOBILE */
-@media(max-width:768px){
-    .about{
-        grid-template-columns:1fr;
-    }
-}
-</style>
-</head>
-
-<body>
-
-<header>
-<img src="logo.png">
-<h1>ISHA</h1>
-<p>Cercle des Femmes de Grande Destinée</p>
-</header>
-
-<nav>
-<a href="#about">À propos</a>
-<a href="#inscription">Inscription</a>
-<a href="#departements">Départements</a>
-<a href="#contact">Contact</a>
-</nav>
-
-<section id="about">
-<h2>À propos</h2>
-<div class="box about">
-<img src="groupe.jpg">
-<p>
-ISHA est une association engagée dans l’accompagnement,
-la formation et l’autonomisation des femmes pour révéler
-leur potentiel et leur destinée.
-</p>
-</div>
-</section>
-
-<section id="inscription">
-<h2>Inscription</h2>
-<div class="box">
-<p style="text-align:center">Remplissez ce formulaire pour rejoindre ISHA.</p>
-
-<form>
-<input type="text" placeholder="Nom complet" required>
-<input type="tel" placeholder="Téléphone" required>
-<input type="email" placeholder="Email" required>
-
-<textarea placeholder="Pourquoi voulez-vous rejoindre ISHA ?" required></textarea>
-
-<button>S’inscrire</button>
-</form>
-</div>
-</section>
-
-<section id="departements">
-<h2>Nos Départements</h2>
-<div class="grid">
-<div class="card">Artistique</div>
-<div class="card">Entrepreneuriat</div>
-<div class="card">Familial</div>
-<div class="card">Éducation</div>
-<div class="card">Social</div>
-</div>
-</section>
-
-<section id="contact">
-<h2>Contact</h2>
-<div class="box contact" style="text-align:center">
-
-<p>📍 Delmas 19, Port-au-Prince</p>
-<p>📞 +509 4921 5914</p>
-<p>📧 Ishaministries5@gmail.com</p>
-<p>📘 Facebook : ISHA Ministries</p>
-
-</div>
-</section>
-
-<footer>
-© 2026 ISHA — Tous droits réservés
-</footer>
-
-</body>
-</html>
+    font-s
