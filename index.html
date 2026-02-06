@@ -7,6 +7,7 @@
 <title>ISHA - Cercle des Femmes de Grande Destinée</title>
 
 <style>
+ <a href="#" id="topBtn">⬆️</a>
 body{
  width:100%;
     height:100%;
@@ -25,7 +26,21 @@ background-attachment:fixed;
 
 color:#f5e8e4;
 }
+.don-btn{
+display:inline-block;
+background:linear-gradient(rgba(0,0,0,0.85),rgba(0,0,0,0.95)),
+url("bg-texture.png");
+padding:12px 30px;
+border-radius:25px;
+color:#000;
+font-weight:bold;
+text-decoration:none;
+box-shadow:0 0 15px #8a4f45;
+}
 
+.don-btn:hover{
+opacity:0.9;
+}
 
  /* LOGO AVEC FOND + OMBRE */
 
@@ -34,7 +49,8 @@ color:#f5e8e4;
     height:280px;
     margin:0 auto 25px;
 
-    background:
+    background:linear-gradient(rgba(0,0,0,0.85),rgba(0,0,0,0.95)),
+url("bg-texture.png");
     radial-gradient(circle at center,
     rgba(212,175,55,0.25),
     rgba(0,0,0,0.9)),
@@ -64,7 +80,8 @@ color:#f5e8e4;
 
 /* HEADER */
 header{
-background:rgba(0,0,0,0.6);
+background:linear-gradient(rgba(0,0,0,0.85),rgba(0,0,0,0.95)),
+url("bg-texture.png");
 text-align:center;
 padding:90px 20px;
 border-bottom:2px solid #b97a6b;
@@ -88,7 +105,7 @@ font-size:20px;
 
 /* MENU */
 nav{
-background:rgba(0,0,0,0.7);
+background:
 border-bottom:1px solid #b97a6b;
 padding:14px;
 text-align:center;
@@ -158,7 +175,8 @@ width:100%;
 }
 
 form button{
-background:linear-gradient(#e3a192,#b97a6b);
+background:linear-gradient(rgba(0,0,0,0.85),rgba(0,0,0,0.95)),
+url("bg-texture.png");
 color:#000;
 font-weight:bold;
 padding:14px 40px;
@@ -185,6 +203,18 @@ color:#e3a192;
 box-shadow:0 0 15px rgba(185,122,107,.4);
 font-weight:bold;
 }
+<!-- EVENEMENTS -->
+<section id="events">
+<h2>Événements</h2>
+
+<div class="box">
+
+<p>📅 15 Mars 2026 — Conférence Leadership</p>
+<p>📅 10 Avril 2026 — Formation Business</p>
+<p>📅 25 Mai 2026 — Retraite Spirituelle</p>
+
+</div>
+</section>
 
 /* BLOG */
 .blog{
@@ -311,7 +341,75 @@ leur potentiel et leur destinée.
 
 </div>
 </section>
- <!-- TEMOIGNAGES -->
+
+<!-- DEPARTMENTS -->
+<section id="departements">
+<h2>Nos Départements</h2>
+
+<div class="grid">
+
+<div class="card">
+<h3>🎨 Artistique</h3>
+<p>
+Développement des talents en chant, danse, théâtre,
+peinture et expression créative pour valoriser les femmes.
+</p>
+</div>
+
+<div class="card">
+<h3>💼 Entrepreneuriat</h3>
+<p>
+Formation en création d’entreprise, gestion financière
+et accompagnement pour l’autonomie économique.
+</p>
+</div>
+
+<div class="card">
+<h3>👨‍👩‍👧‍👦 Familial</h3>
+<p>
+Soutien aux familles, conseils conjugaux,
+éducation des enfants et stabilité du foyer.
+</p>
+</div>
+
+<div class="card">
+<h3>📚 Éducation</h3>
+<p>
+Renforcement scolaire, alphabétisation,
+formations professionnelles et mentorat.
+</p>
+</div>
+
+<div class="card">
+<h3>🤝 Social</h3>
+<p>
+Aide humanitaire, actions communautaires,
+visites sociales et assistance aux personnes vulnérables.
+</p>
+</div>
+
+<div class="card">
+<h3>❤️ Santé & Bien-être</h3>
+<p>
+Sensibilisation à la santé physique, mentale,
+nutrition, hygiène et prévention.
+</p>
+</div>
+
+</div>
+</section>
+
+<div class="grid">
+
+<div class="card">Artistique</div>
+<div class="card">Entrepreneuriat</div>
+<div class="card">Familial</div>
+<div class="card">Éducation</div>
+<div class="card">Social</div>
+
+</div>
+</section>
+ !-- TEMOIGNAGES -->
 <section id="temoignages">
 <h2>Témoignages</h2>
 
@@ -335,22 +433,6 @@ leur potentiel et leur destinée.
 </div>
 </section>
 
-
-<!-- DEPARTMENTS -->
-<section id="departements">
-<h2>Nos Départements</h2>
-
-<div class="grid">
-
-<div class="card">Artistique</div>
-<div class="card">Entrepreneuriat</div>
-<div class="card">Familial</div>
-<div class="card">Éducation</div>
-<div class="card">Social</div>
-
-</div>
-</section>
-
 <!-- CONTACT -->
 <section id="contact">
 <h2>Contact</h2>
@@ -360,6 +442,10 @@ leur potentiel et leur destinée.
 <p>📍 Delmas 19, Port-au-Prince</p>
 <p>📞 +509 4921 5914</p>
 <p>📧 Ishaministries5@gmail.com</p>
+ <p style="margin-top:20px;">
+<a href="#" class="don-btn">💝 Soutenir ISHA</a>
+</p>
+
 
 <p>
 <a href="https://facebook.com" style="color:#e3a192;">
