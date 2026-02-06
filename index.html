@@ -8,186 +8,178 @@
 
 <style>
 
-/* BODY */
-html,body{
-margin:0;
-padding:0;
-width:100%;
-height:100%;
-}
+/* ================= BASE ================= */
 
 body{
+margin:0;
 font-family:"Georgia",serif;
+color:#f8eaea;
 
+/* Fond Marron Luxe */
 background:
-linear-gradient(rgba(0,0,0,0.85),rgba(0,0,0,0.95)),
-url("bg-texture.png");
+linear-gradient(rgba(40,20,15,0.9),rgba(15,7,5,0.95)),
+radial-gradient(circle at top,#8a5a3c,#2a140c 70%);
 
-background-size:cover;
-background-position:center;
 background-attachment:fixed;
-
-color:#f5e8e4;
+background-size:cover;
 }
 
-/* LOGO */
+/* ================= COULEURS ================= */
 
-.logo-container{
-width:280px;
-height:280px;
-margin:0 auto 25px;
+:root{
+--or:#d4af37;
+--rose:#f2b6c6;
+--bronze:#b97a6b;
+}
 
-background:
-radial-gradient(circle,
-rgba(212,175,55,0.25),
-rgba(0,0,0,0.9)),
-url("bg-texture.png");
+/* ================= HEADER ================= */
 
-background-size:cover;
-border-radius:50%;
-padding:18px;
-
-box-shadow:
-0 0 30px rgba(212,175,55,0.7),
-0 0 60px rgba(180,120,140,0.6);
+header{
+text-align:center;
+padding:90px 20px;
+background:rgba(0,0,0,0.6);
+border-bottom:2px solid var(--or);
 }
 
 .logo{
-width:100%;
-height:100%;
-object-fit:contain;
-
-filter:
-drop-shadow(0 0 20px rgba(212,175,55,0.9))
-drop-shadow(0 0 40px rgba(180,120,140,0.6));
-}
-
-/* HEADER */
-
-header{
-background:rgba(0,0,0,0.6);
-text-align:center;
-padding:90px 20px;
-border-bottom:2px solid #b97a6b;
+width:220px;
+filter:drop-shadow(0 0 25px var(--or));
 }
 
 header h1{
 font-size:55px;
-color:#e3a192;
+color:var(--rose);
 letter-spacing:4px;
+margin:15px 0;
 }
 
 header p{
-color:#c9877a;
 font-size:20px;
+color:var(--or);
 }
 
-/* NAV */
+/* ================= MENU ================= */
 
 nav{
-background:rgba(0,0,0,0.7);
-padding:14px;
+background:rgba(0,0,0,0.85);
+padding:15px;
 text-align:center;
-border-bottom:1px solid #b97a6b;
+border-bottom:1px solid var(--or);
 }
 
 nav a{
-color:#c9877a;
+color:var(--rose);
 margin:0 15px;
 text-decoration:none;
 font-weight:bold;
 }
 
 nav a:hover{
-color:#fff;
+color:white;
 }
 
-/* SECTION */
+/* ================= SECTIONS ================= */
 
 section{
 max-width:1200px;
 margin:auto;
-padding:70px 20px;
+padding:80px 20px;
 }
 
 h2{
 text-align:center;
-color:#e3a192;
+font-size:36px;
+color:var(--rose);
 margin-bottom:40px;
+text-shadow:0 0 12px var(--or);
 }
 
-/* BOX */
+/* ================= BOX ================= */
 
 .box{
 background:rgba(0,0,0,0.65);
-border:1px solid #b97a6b;
+border:1px solid var(--or);
 border-radius:15px;
-padding:40px;
-
-box-shadow:0 0 25px rgba(185,122,107,.4);
+padding:45px;
+box-shadow:0 0 30px rgba(212,175,55,.4);
 }
 
-/* GRID */
+/* ================= GRID ================= */
 
 .grid{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
-gap:20px;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
 }
+
+/* ================= CARD ================= */
 
 .card{
-background:rgba(0,0,0,0.7);
-border:1px solid #b97a6b;
-padding:18px;
-border-radius:10px;
+background:rgba(0,0,0,0.8);
+border:1px solid var(--or);
+padding:25px;
+border-radius:12px;
 text-align:center;
-color:#e3a192;
+box-shadow:0 0 15px var(--bronze);
 }
 
-/* FORM */
+/* ================= ABOUT ================= */
 
-form input, textarea{
+.about{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:30px;
+align-items:center;
+}
+
+.about img{
+width:100%;
+border-radius:12px;
+border:2px solid var(--or);
+}
+
+/* ================= FORM ================= */
+
+form input,textarea{
 width:100%;
 padding:12px;
-margin:8px 0;
-border-radius:8px;
-border:1px solid #b97a6b;
+margin:10px 0;
 background:#000;
-color:#fff;
+border:1px solid var(--or);
+border-radius:8px;
+color:white;
 }
 
 form button{
-background:#b97a6b;
-color:#000;
-padding:12px 35px;
+background:linear-gradient(var(--rose),var(--or));
 border:none;
-border-radius:25px;
+padding:14px 40px;
+border-radius:30px;
 font-weight:bold;
 cursor:pointer;
+box-shadow:0 0 15px var(--or);
 }
 
-/* FOOTER */
+/* ================= FOOTER ================= */
 
 footer{
-background:rgba(0,0,0,0.8);
-border-top:1px solid #b97a6b;
-padding:25px;
+background:rgba(0,0,0,0.9);
 text-align:center;
-color:#c9877a;
+padding:30px;
+border-top:1px solid var(--or);
+color:var(--rose);
 }
 
-/* WHATSAPP */
+/* ================= MOBILE ================= */
 
-#whatsapp{
-position:fixed;
-bottom:20px;
-right:20px;
-background:#25D366;
-color:white;
-padding:12px 18px;
-border-radius:40px;
-text-decoration:none;
-font-weight:bold;
+@media(max-width:768px){
+.about{
+grid-template-columns:1fr;
+}
+
+header h1{
+font-size:40px;
+}
 }
 
 </style>
@@ -195,164 +187,235 @@ font-weight:bold;
 
 <body>
 
-<a id="whatsapp" href="https://wa.me/50941264154">WhatsApp</a>
+<!-- ================= HEADER ================= -->
 
 <header>
 
-<div class="logo-container">
 <img src="logo1.png" class="logo">
-</div>
 
 <h1>ISHA</h1>
 <p>Cercle des Femmes de Grande Destinée</p>
 
 </header>
 
+<!-- ================= MENU ================= -->
+
 <nav>
 <a href="#about">À propos</a>
-<a href="#objectifs">Objectifs</a>
-<a href="#blog">Blog</a>
-<a href="#gallery">Galerie</a>
-<a href="#inscription">Inscription</a>
+<a href="#vision">Vision</a>
+<a href="#programmes">Programmes</a>
+<a href="#impact">Impact</a>
 <a href="#departements">Départements</a>
 <a href="#temoignages">Témoignages</a>
+<a href="#gallery">Galerie</a>
 <a href="#contact">Contact</a>
 </nav>
 
-<!-- ABOUT -->
+<!-- ================= ABOUT ================= -->
 
 <section id="about">
-<h2>À propos</h2>
 
-<div class="box">
+<h2>Notre Histoire</h2>
+
+<div class="box about">
+
+<img src="groupe.jpeg">
 
 <p>
-ISHA est une association engagée pour
-l’autonomisation des femmes.
+ISHA est née d’un appel profond à restaurer
+la dignité, la valeur et la destinée des femmes.
+Depuis sa création, ISHA œuvre pour former,
+accompagner et élever chaque femme vers
+son plein potentiel.
 </p>
 
 </div>
+
 </section>
 
-<!-- OBJECTIFS -->
+<!-- ================= VISION ================= -->
 
-<section id="objectifs">
-<h2>Nos Objectifs</h2>
+<section id="vision">
+
+<h2>Vision & Valeurs</h2>
+
+<div class="box">
+
+<p><strong>Vision :</strong> Former une génération de femmes fortes,
+autonomes et inspirantes.</p>
+
+<p><strong>Valeurs :</strong></p>
+
+<ul>
+<li>❤️ Amour et compassion</li>
+<li>✨ Intégrité</li>
+<li>🤝 Solidarité</li>
+<li>📖 Formation continue</li>
+<li>🙏 Foi et espérance</li>
+</ul>
+
+</div>
+
+</section>
+
+<!-- ================= PROGRAMMES ================= -->
+
+<section id="programmes">
+
+<h2>Nos Programmes</h2>
+
+<div class="grid">
+
+<div class="card">
+<h3>Leadership Féminin</h3>
+<p>Formation des femmes leaders responsables.</p>
+</div>
+
+<div class="card">
+<h3>Entrepreneuriat</h3>
+<p>Création et gestion d’activités génératrices.</p>
+</div>
+
+<div class="card">
+<h3>Éducation</h3>
+<p>Alphabétisation et mentorat.</p>
+</div>
+
+<div class="card">
+<h3>Accompagnement Social</h3>
+<p>Soutien aux familles vulnérables.</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- ================= IMPACT ================= -->
+
+<section id="impact">
+
+<h2>Notre Impact</h2>
 
 <div class="box">
 
 <ul>
-<li>Former des leaders</li>
-<li>Autonomie financière</li>
-<li>Renforcer les familles</li>
-<li>Aide sociale</li>
-<li>Éducation</li>
+<li>✔️ Plus de 500 femmes accompagnées</li>
+<li>✔️ 120 formations réalisées</li>
+<li>✔️ 60 projets soutenus</li>
+<li>✔️ Présence dans plusieurs communautés</li>
 </ul>
 
 </div>
+
 </section>
 
-<!-- BLOG -->
-
-<section id="blog">
-<h2>Blog</h2>
-
-<div class="grid">
-
-<div class="card">
-<h3>Leadership</h3>
-<p>Janvier 2026</p>
-</div>
-
-<div class="card">
-<h3>Communauté</h3>
-<p>Février 2026</p>
-</div>
-
-</div>
-</section>
-
-<!-- GALLERY -->
-
-<section id="gallery">
-<h2>Galerie</h2>
-
-<div class="grid">
-
-<img src="photo1.jpeg" style="width:100%">
-<img src="photo2.jpeg" style="width:100%">
-<img src="photo3.jpeg" style="width:100%">
-
-</div>
-</section>
-
-<!-- INSCRIPTION -->
-
-<section id="inscription">
-<h2>Inscription</h2>
-
-<div class="box">
-
-<form>
-
-<input type="text" placeholder="Nom complet">
-<input type="tel" placeholder="Téléphone">
-<input type="email" placeholder="Email">
-
-<textarea placeholder="Message"></textarea>
-
-<button>S’inscrire</button>
-
-</form>
-
-</div>
-</section>
-
-<!-- DEPARTEMENTS -->
+<!-- ================= DEPARTEMENTS ================= -->
 
 <section id="departements">
-<h2>Départements</h2>
+
+<h2>Nos Départements</h2>
 
 <div class="grid">
 
-<div class="card">Artistique</div>
-<div class="card">Entrepreneuriat</div>
-<div class="card">Éducation</div>
-<div class="card">Social</div>
+<div class="card">
+<h3>🎨 Artistique</h3>
+<p>Développement des talents créatifs.</p>
+</div>
+
+<div class="card">
+<h3>💼 Entrepreneuriat</h3>
+<p>Autonomie financière.</p>
+</div>
+
+<div class="card">
+<h3>👨‍👩‍👧‍👦 Familial</h3>
+<p>Stabilité du foyer.</p>
+</div>
+
+<div class="card">
+<h3>📚 Éducation</h3>
+<p>Formation continue.</p>
+</div>
+
+<div class="card">
+<h3>🤝 Social</h3>
+<p>Aide humanitaire.</p>
+</div>
+
+<div class="card">
+<h3>❤️ Santé</h3>
+<p>Bien-être physique et mental.</p>
+</div>
 
 </div>
+
 </section>
 
-<!-- TEMOIGNAGES -->
+<!-- ================= TEMOIGNAGES ================= -->
 
 <section id="temoignages">
+
 <h2>Témoignages</h2>
 
 <div class="grid">
 
-<div class="card">Marie L.</div>
-<div class="card">Sandra J.</div>
-<div class="card">Ruth P.</div>
+<div class="card">
+<p>"ISHA a transformé ma vie."</p>
+<strong>- Marie L.</strong>
+</div>
+
+<div class="card">
+<p>"J’ai retrouvé confiance en moi."</p>
+<strong>- Sandra J.</strong>
+</div>
+
+<div class="card">
+<p>"Une vraie famille."</p>
+<strong>- Ruth P.</strong>
+</div>
 
 </div>
+
 </section>
 
-<!-- CONTACT -->
+<!-- ================= GALERIE ================= -->
+
+<section id="gallery">
+
+<h2>Galerie</h2>
+
+<div class="grid">
+
+<img src="photo1.jpeg">
+<img src="photo2.jpeg">
+<img src="photo3.jpeg">
+<img src="photo4.jpeg">
+
+</div>
+
+</section>
+
+<!-- ================= CONTACT ================= -->
 
 <section id="contact">
+
 <h2>Contact</h2>
 
 <div class="box">
 
-<p>📍 Delmas 19</p>
-<p>📞 509 41264154</p>
+<p>📍 Delmas 19, Port-au-Prince</p>
+<p>📞 +509 41264154</p>
 <p>📧 Ishaministries5@gmail.com</p>
 
 </div>
+
 </section>
 
+<!-- ================= FOOTER ================= -->
+
 <footer>
-© 2026 ISHA — Tous droits réservés
+© 2026 ISHA — Tous droits réservés  
+« Une femme forte, une nation forte »
 </footer>
 
 </body>
