@@ -8,25 +8,15 @@
 
 <style>
 
-/* RESET */
-html,body{
-margin:0;
-padding:0;
-width:100%;
-height:100%;
-}
+/* ================= GLOBAL ================= */
 
-/* BODY */
 body{
+margin:0;
 font-family:"Georgia",serif;
 
-/* Fond marron bronze */
 background:
-linear-gradient(
-rgba(40,20,15,0.85),
-rgba(15,7,5,0.95)
-),
-radial-gradient(circle at top,#8a5a3c,#2a140c 70%);
+linear-gradient(rgba(25,10,7,0.9),rgba(10,5,3,0.95)),
+url("bg-texture.png");
 
 background-size:cover;
 background-position:center;
@@ -35,78 +25,55 @@ background-attachment:fixed;
 color:#f5e8e4;
 }
 
-/* LOGO */
+/* ================= HEADER ================= */
 
-.logo-container{
-width:280px;
-height:280px;
-margin:0 auto 25px;
-
-background:
-radial-gradient(circle,
-rgba(212,175,55,0.25),
-rgba(0,0,0,0.9));
-
-border-radius:50%;
-padding:18px;
-
-box-shadow:
-0 0 30px rgba(212,175,55,0.7),
-0 0 60px rgba(180,120,140,0.6);
+header{
+text-align:center;
+padding:80px 20px;
+border-bottom:2px solid #b97a6b;
+background:rgba(0,0,0,0.6);
 }
 
 .logo{
-width:100%;
-height:100%;
-object-fit:contain;
-
-filter:
-drop-shadow(0 0 20px rgba(212,175,55,0.9))
-drop-shadow(0 0 40px rgba(180,120,140,0.6));
-}
-
-/* HEADER */
-
-header{
-background:rgba(0,0,0,0.55);
-text-align:center;
-padding:90px 20px;
-border-bottom:2px solid #b97a6b;
+width:220px;
+margin-bottom:20px;
+filter:drop-shadow(0 0 30px gold);
 }
 
 header h1{
-font-size:55px;
-color:#e3a192;
+font-size:60px;
+color:#f0b29d;
 letter-spacing:4px;
-margin:0;
+margin:10px 0;
 }
 
 header p{
-color:#c9877a;
 font-size:20px;
+color:#d19b8c;
 }
 
-/* NAV */
+/* ================= MENU ================= */
 
 nav{
-background:rgba(0,0,0,0.7);
-padding:14px;
-text-align:center;
+background:rgba(0,0,0,0.85);
 border-bottom:1px solid #b97a6b;
+padding:15px;
+text-align:center;
 }
 
 nav a{
-color:#c9877a;
+color:#d19b8c;
 margin:0 15px;
 text-decoration:none;
 font-weight:bold;
+font-size:15px;
 }
 
 nav a:hover{
 color:#fff;
 }
 
-/* SECTION */
+/* ================= SECTION ================= */
 
 section{
 max-width:1200px;
@@ -116,23 +83,93 @@ padding:70px 20px;
 
 h2{
 text-align:center;
-color:#e3a192;
+font-size:34px;
+color:#f0b29d;
 margin-bottom:40px;
-text-shadow:0 0 12px #8a4f45;
+text-shadow:0 0 15px #8a4f45;
 }
 
-/* BOX */
+/* ================= BOX ================= */
 
 .box{
-background:rgba(40,20,15,0.75);
+background:rgba(20,10,6,0.75);
 border:1px solid #b97a6b;
 border-radius:15px;
 padding:40px;
 
-box-shadow:0 0 25px rgba(185,122,107,.5);
+box-shadow:0 0 25px rgba(185,122,107,0.6);
 }
 
-/* GRID */
+/* ================= ABOUT ================= */
+
+.about{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:30px;
+align-items:center;
+}
+
+.about img{
+width:100%;
+border-radius:12px;
+border:2px solid #b97a6b;
+box-shadow:0 0 20px #8a4f45;
+}
+
+/* ================= OBJECTIFS ================= */
+
+.objectifs li{
+margin:10px 0;
+font-size:18px;
+}
+
+/* ================= BLOG ================= */
+
+.blog{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+}
+
+.post{
+background:rgba(0,0,0,0.8);
+border:1px solid #b97a6b;
+border-radius:12px;
+padding:20px;
+text-align:center;
+box-shadow:0 0 15px #8a4f45;
+}
+
+/* ================= FORM ================= */
+
+form input,
+form textarea{
+width:100%;
+background:#000;
+border:1px solid #b97a6b;
+color:#fff;
+padding:12px;
+margin:10px 0;
+border-radius:6px;
+}
+
+form button{
+background:linear-gradient(#f0b29d,#b97a6b);
+color:#000;
+border:none;
+padding:14px 40px;
+border-radius:30px;
+font-weight:bold;
+cursor:pointer;
+
+box-shadow:0 0 20px #8a4f45;
+}
+
+form button:hover{
+opacity:0.9;
+}
+
+/* ================= GRID ================= */
 
 .grid{
 display:grid;
@@ -141,242 +178,5 @@ gap:20px;
 }
 
 .card{
-background:rgba(0,0,0,0.7);
-border:1px solid #b97a6b;
-padding:18px;
-border-radius:10px;
-text-align:center;
-color:#e3a192;
-}
-
-/* FORM */
-
-form input, textarea{
-width:100%;
-padding:12px;
-margin:8px 0;
-border-radius:8px;
-border:1px solid #b97a6b;
-background:#000;
-color:#fff;
-}
-
-form button{
-background:linear-gradient(#e3a192,#b97a6b);
-color:#000;
-padding:12px 35px;
-border:none;
-border-radius:25px;
-font-weight:bold;
-cursor:pointer;
-}
-
-/* FOOTER */
-
-footer{
 background:rgba(0,0,0,0.85);
-border-top:1px solid #b97a6b;
-padding:25px;
-text-align:center;
-color:#c9877a;
-}
-
-/* WHATSAPP */
-
-#whatsapp{
-position:fixed;
-bottom:20px;
-right:20px;
-background:#25D366;
-color:white;
-padding:12px 18px;
-border-radius:40px;
-text-decoration:none;
-font-weight:bold;
-box-shadow:0 0 10px black;
-}
-
-/* MOBILE */
-
-@media(max-width:768px){
-
-.logo-container{
-width:200px;
-height:200px;
-}
-
-header h1{
-font-size:38px;
-}
-
-}
-
-</style>
-</head>
-
-<body>
-
-<!-- WhatsApp -->
-<a id="whatsapp" href="https://wa.me/50941264154">WhatsApp</a>
-
-<header>
-
-<div class="logo-container">
-<img src="logo1.png" class="logo" alt="Logo ISHA">
-</div>
-
-<h1>ISHA</h1>
-<p>Cercle des Femmes de Grande Destinée</p>
-
-</header>
-
-<nav>
-<a href="#about">À propos</a>
-<a href="#objectifs">Objectifs</a>
-<a href="#blog">Blog</a>
-<a href="#gallery">Galerie</a>
-<a href="#inscription">Inscription</a>
-<a href="#departements">Départements</a>
-<a href="#temoignages">Témoignages</a>
-<a href="#contact">Contact</a>
-</nav>
-
-<!-- ABOUT -->
-
-<section id="about">
-<h2>À propos</h2>
-
-<div class="box">
-
-<p>
-ISHA est une association engagée pour
-l’autonomisation des femmes et le
-développement communautaire.
-</p>
-
-</div>
-</section>
-
-<!-- OBJECTIFS -->
-
-<section id="objectifs">
-<h2>Nos Objectifs</h2>
-
-<div class="box">
-
-<ul>
-<li>Former des femmes leaders</li>
-<li>Promouvoir l’autonomie financière</li>
-<li>Renforcer les familles</li>
-<li>Encourager l’éducation</li>
-<li>Soutenir les femmes vulnérables</li>
-</ul>
-
-</div>
-</section>
-
-<!-- BLOG -->
-
-<section id="blog">
-<h2>Blog</h2>
-
-<div class="grid">
-
-<div class="card">
-<h3>Leadership</h3>
-<p>Janvier 2026</p>
-</div>
-
-<div class="card">
-<h3>Communauté</h3>
-<p>Février 2026</p>
-</div>
-
-</div>
-</section>
-
-<!-- GALLERY -->
-
-<section id="gallery">
-<h2>Galerie</h2>
-
-<div class="grid">
-
-<img src="photo1.jpeg" style="width:100%">
-<img src="photo2.jpeg" style="width:100%">
-<img src="photo3.jpeg" style="width:100%">
-
-</div>
-</section>
-
-<!-- INSCRIPTION -->
-
-<section id="inscription">
-<h2>Inscription</h2>
-
-<div class="box">
-
-<form>
-
-<input type="text" placeholder="Nom complet" required>
-<input type="tel" placeholder="Téléphone" required>
-<input type="email" placeholder="Email" required>
-
-<textarea placeholder="Pourquoi voulez-vous rejoindre ISHA ?" required></textarea>
-
-<button>S’inscrire</button>
-
-</form>
-
-</div>
-</section>
-
-<!-- DEPARTEMENTS -->
-
-<section id="departements">
-<h2>Départements</h2>
-
-<div class="grid">
-
-<div class="card">Artistique</div>
-<div class="card">Entrepreneuriat</div>
-<div class="card">Éducation</div>
-<div class="card">Social</div>
-
-</div>
-</section>
-
-<!-- TEMOIGNAGES -->
-
-<section id="temoignages">
-<h2>Témoignages</h2>
-
-<div class="grid">
-
-<div class="card">Marie L.</div>
-<div class="card">Sandra J.</div>
-<div class="card">Ruth P.</div>
-
-</div>
-</section>
-
-<!-- CONTACT -->
-
-<section id="contact">
-<h2>Contact</h2>
-
-<div class="box">
-
-<p>📍 Delmas 19</p>
-<p>📞 +509 41264154</p>
-<p>📧 Ishaministries5@gmail.com</p>
-
-</div>
-</section>
-
-<footer>
-© 2026 ISHA — Tous droits réservés
-</footer>
-
-</body>
-</html>
+border:1px solid
